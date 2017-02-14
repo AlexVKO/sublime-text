@@ -1,0 +1,28 @@
+
+[
+  // jump between block
+  {"keys": ["alt+k"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false}},
+  {"keys": ["alt+j"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true}},
+  {"keys": ["shift+alt+k"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true}},
+  {"keys": ["shift+alt+j"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true, "extend": true}},
+
+  // Origami
+  { "keys": ["super+k", "super+w"], "command": "destroy_pane", "args": {"direction": "self"} },
+
+  { "keys": ["super+k", "k"], "command": "travel_to_pane", "args": {"direction": "up"} },
+  { "keys": ["super+k", "l"], "command": "travel_to_pane", "args": {"direction": "right"} },
+  { "keys": ["super+k", "j"], "command": "travel_to_pane", "args": {"direction": "down"} },
+  { "keys": ["super+k", "h"], "command": "travel_to_pane", "args": {"direction": "left"} },
+
+  { "keys": ["ctrl+shift+f2"], "command": "select_all_bookmarks" },
+  { "keys": ["ctrl+shift+l"], "command": "split_selection_into_lines" },
+  
+{ "keys": ["h"], "command": "move", "args": {"by": "characters", "forward": false}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ] },
+{ "keys": ["j"], "command": "move", "args": {"by": "lines", "forward": true}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ] },
+{ "keys": ["k"], "command": "move", "args": {"by": "lines", "forward": false}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ] },
+{ "keys": ["l"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ] }	
+]
